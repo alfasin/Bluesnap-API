@@ -11,7 +11,7 @@ Got back to the account home page and follow the "getting started guide" in orde
 That's it, you're ready to go!
 
 You can test the newly setup contract on this link:
-https://sandbox.plimus.com/jsp/buynow.jsp?contractId=<contract-id>
+https://sandbox.plimus.com/jsp/buynow.jsp?contractId=\<enter the contract-id here\>
 
 You can see a working examples (how to use this code) here:
 http://alfasin.com/blog/code/api.html
