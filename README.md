@@ -10,8 +10,8 @@ After you've registered and validated your account, go to "Settings --> API sett
 Got back to the account home page and follow the "getting started guide" in order to setup a product and a contract.
 That's it, you're ready to go!
 
-You can test the newly setup contract on this link:
-https://sandbox.plimus.com/jsp/buynow.jsp?contractId=\<enter the contract-id here\>
+You can test the newly setup contract on this link (this example uses one of my contracts):
+https://sandbox.plimus.com/jsp/buynow.jsp?contractId=2121730
 
 You can see a working examples (how to use this code) here:
 http://alfasin.com/blog/code/api.html
