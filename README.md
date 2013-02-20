@@ -1,17 +1,9 @@
-Bluesnap auto-login token
+Bluesnap API
 
-This code example shows how to use Bluesnap (payment processing service) API in order to auto-login a registered shopper into a Buy-page. In case the shopper already placed orders in the past, the Buy-page will allow him/her to use the same credit-card that was used on the last purchase.
+I'll post PHP code examples that'll demonstrate how to use Bluesnaps' API in order to implement the following web-services:
+1. create and update shopper entities
+2. place orders
+3. manage subscriptions
+4. use a token in order to "log a customer into" your Buy-Page
 
-This PHP implementation is one step away from creating a single-click purchase, which is the ideal shopper experience.
-In order to use this implementation, you should open a sandbox account on:
-https://sandbox.plimus.com/jsp/new_developer.jsp
 
-After you've registered and validated your account, go to "Settings --> API settings" and set your credentials up.
-Got back to the account home page and follow the "getting started guide" in order to setup a product and a contract.
-That's it, you're ready to go!
-
-You can test the newly setup contract on this link (this example uses one of my contracts):
-https://sandbox.plimus.com/jsp/buynow.jsp?contractId=2121730
-
-You can see a working examples (how to use this code) here:
-http://alfasin.com/blog/code/api.html
