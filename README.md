@@ -1,7 +1,7 @@
 <b>Bluesnap API</b>
 <br>
 Bluesnap is an online payment processor as well as my employer :)<br>
-This project started from a code-example I wrote for fun during the weekend, in order to see how difficult is it to implement our own API.
+This project started from a code-examples I wrote for fun during the weekend, in order to see how difficult is it to implement our own API.
 Later on I used it to help Bluesnap merchants and finally I decided to take it one step forwrd and implement more calls to web-services.<br>
 On that point <a href="https://www.linkedin.com/pub/ben-hultin/40/877/827">Ben Hultin</a> came to my help and was kind enough to help me implementing the rest of the services.
 
