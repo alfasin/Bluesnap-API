@@ -1,0 +1,112 @@
+<?php
+
+include_once('../credentials.php'); //here we define $credentials = $username . ":" . $password;
+
+   $shopperId = $_REQUEST['shopper-id'];
+   $shoppingId = $_REQUEST['shopping-id'];
+   $firstName = $_REQUEST['first-name'];  
+   $amount = $_REQUEST['amount'];
+   $skuId = $_REQUEST['sku-id'];
+   $quantity = $_REQUEST['quantity'];
+
+        
+        
+$xmlToSend = ' 
+<shopping-context xmlns="http://ws.plimus.com">
+  <step>CREATED</step>
+  <web-info>
+    <ip>62.219.121.253</ip>
+    <remote-host>
+    bzq-219-121-253.static.bezeqint.net.reinventhosting.com</remote-host>
+    <user-agent>Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1;
+    SV1; GTB6.3; .NET CLR 2.0.50727)</user-agent>
+    <accept-language>en-us</accept-language>
+  </web-info>
+  <order-details>
+    <order>
+      <ordering-shopper>
+        <shopper-id>'.$shopperId.'</shopper-id>
+      </ordering-shopper>
+      <cart>
+        <cart-item>
+          <sku>
+            <sku-id>'.$skuId.'</sku-id>
+            <sku-charge-price>
+              <charge-type>initial</charge-type>
+              <amount>'.$amount.'</amount>
+              <currency>USD</currency>
+            </sku-charge-price>
+          </sku>
+          <quantity>1</quantity>
+          <sku-parameter>
+            <param-name>name</param-name>
+            <param-value>'.$firstName.'</param-value>
+          </sku-parameter>
+          <sku-parameter>
+            <param-name>instructions</param-name>
+            <param-value>Please follow the
+            instructions</param-value>
+          </sku-parameter>
+          <sku-parameter>
+            <param-name>terms and conditions</param-name>
+            <param-value>Y</param-value>
+          </sku-parameter>
+          <sku-parameter>
+            <param-name>color</param-name>
+            <param-value>red</param-value>
+          </sku-parameter>
+          <item-sub-total>'.$amount.'</item-sub-total>
+        </cart-item>
+        <coupons>
+          <coupons-total>0.00</coupons-total>
+        </coupons>
+        <tax>0.00</tax>
+        <total-cart-cost>'.$amount.'</total-cart-cost>
+      </cart>
+      <expected-total-price>
+        <amount>'.$amount.'</amount>
+        <currency>USD</currency>
+      </expected-total-price>
+    </order>
+  </order-details>
+</shopping-context>';
+
+
+
+$url = 'https://sandbox.plimus.com/services/2/shopping-context/'.$shoppingId;
+
+
+$ch = curl_init();
+curl_setopt($ch, CURLOPT_URL, $url);
+curl_setopt ($ch, CURLOPT_HTTPHEADER, array('X-HTTP-Method-Override: PUT'));
+curl_setopt($ch, CURLOPT_USERPWD, "$credentials");
+curl_setopt($ch, CURLOPT_POSTFIELDS, $xmlToSend);
+curl_setopt($ch, CURLOPT_HTTPAUTH, CURLAUTH_BASIC);
+curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1); // ask for results to be returned
+curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, FALSE);
+curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, FALSE);
+curl_setopt($ch, CURLOPT_HEADER, 1);
+curl_setopt($ch, CURLOPT_VERBOSE, 1);
+
+$result = curl_exec($ch);
+$info = curl_getinfo($ch, CURLINFO_HEADER_SIZE);
+curl_close($ch);
+$header = substr($result, 0, $info);
+$body = substr($result, $info);
+echo 'Headers:<br />';
+echo 'Status: '.format_header($header).'<br /><br />';
+if(!empty($body)){
+    echo 'Body:<br />';
+    echo $body;
+}
+else{
+    echo 'No body information to return';
+}
+
+
+
+?>
+
+
+
+
