@@ -13,6 +13,6 @@ The following PHP code examples will demonstrate how to use Bluesnaps' API in or
 5. Implementations of all kind of Bluesnap-API tools<br>
 6. and more...
 
-It is recommended to start with reading the Web-services section on Bluesnap documentation center: http://www.bluesnap.com/helpcenter/Static/default.htm
+It is recommended to start with reading the Web-Sservices section in Bluesnap documentation center: http://www.bluesnap.com/helpcenter/Static/default.htm
 
 
