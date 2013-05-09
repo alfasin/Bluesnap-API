@@ -9,5 +9,9 @@ The following PHP code examples will demonstrate how to use Bluesnaps' API in or
 2. place orders<br>
 3. manage subscriptions<br>
 4. use a token in order to "log a customer into" your Buy-Page<br>
+5. Implementations of all kind of Bluesnap-API tools<br>
+6. and more...
+
+It is recommended to start with reading the Web-services section on Bluesnap documentation center: http://www.bluesnap.com/helpcenter/Static/default.htm
 
 
