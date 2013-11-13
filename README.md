@@ -6,7 +6,7 @@ Later on I used it to help Bluesnap merchants and finally I decided to take it o
 On that point <a href="https://www.linkedin.com/pub/ben-hultin/40/877/827">Ben Hultin</a> came into the picture 
 and was kind enough to help me implement the rest of the services.
 
-The following PHP code examples will demonstrate how to use Bluesnaps' API in order to implement the following web-services:<br>
+The PHP code examples implement the following web-services:<br>
 1. create and update shopper entities<br>
 2. place orders<br>
 3. manage subscriptions<br>
