@@ -1,4 +1,4 @@
-<b>Bluesnap API</b>
+#Bluesnap API
 <br>
 Bluesnap is an online payment processor as well as my employer :)<br>
 This project started from a code-example I wrote for fun during the weekend in order to see how difficult is it to implement our own API.
