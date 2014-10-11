@@ -1,6 +1,6 @@
 #Bluesnap API
 <br>
-Bluesnap is an online payment processor as well as my employer :)<br>
+Bluesnap is an online payment processor as well as my previous employer :)<br>
 This project started from a code-example I wrote for fun during the weekend in order to see how difficult is it to implement our own API.
 Later on I used it to help Bluesnap merchants and finally I decided to take it one step further and implement more API calls.<br>
 At that point <a href="https://www.linkedin.com/pub/ben-hultin/40/877/827">Ben Hultin</a> came into the picture 
