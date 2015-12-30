@@ -14,7 +14,7 @@ The PHP code examples implement the following web-services:<br>
 5. Implementations of all kind of Bluesnap-API tools<br>
 6. and more...
 
-It is recommended to start with reading the Web-Services section in Bluesnap documentation center: http://home.bluesnap.com/integrationguide/default.htm
+It is recommended to start with reading the Web-Services section in Bluesnap documentation center: http://docs.bluesnap.com/ndoc/paymentAPIDoc2/Default.htm#GettingLive.htm
 
 [![Codacy Badge](https://api.codacy.com/project/badge/grade/a1096dff4d1a4ca7bf6c138dc1fa2db5)](https://www.codacy.com/app/alfasin/Bluesnap-API)
 
